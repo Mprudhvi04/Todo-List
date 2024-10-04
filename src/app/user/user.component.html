@@ -1,0 +1,10 @@
+<div>
+    <button [class.active]="selected" (click)="onSelectUser()">   <!--dynamic css styling bu usuing @input and properrt-->
+        <span>{{user.name}}</span>
+        <!-- <span>{{SelectedUser().id}}</span> -->
+        <div class="image-container">
+            <img [src]="ImagePath" alt="User Image" />
+        </div>
+    </button>
+</div>
+
